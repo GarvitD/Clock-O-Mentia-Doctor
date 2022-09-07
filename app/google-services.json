@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993622159495",
+    "project_id": "clock-o-mentia-doctor",
+    "storage_bucket": "clock-o-mentia-doctor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993622159495:android:8233f2d45f3031cf72c822",
+        "android_client_info": {
+          "package_name": "com.example.clock_o_mentiadoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993622159495-b2hgupnu907v72jo7mabsvs9rb0r5gv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0ugxsCih-mKraciuxO_zcVodEIaff_bA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993622159495-b2hgupnu907v72jo7mabsvs9rb0r5gv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
