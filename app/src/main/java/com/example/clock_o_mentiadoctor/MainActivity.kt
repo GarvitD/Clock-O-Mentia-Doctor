@@ -1,7 +1,5 @@
 package com.example.clock_o_mentiadoctor
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import org.jitsi.meet.sdk.JitsiMeetActivity
