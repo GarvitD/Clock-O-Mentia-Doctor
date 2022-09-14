@@ -1,21 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="faa5bcc6-adcf-4c27-8225-6601e6068829" name="Changes" comment="" />
+    <list default="true" id="faa5bcc6-adcf-4c27-8225-6601e6068829" name="Changes" comment="added main activity , profile setup activity">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Activities/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Activities/ProfileSetupActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Repositories/RepoImplemenation/AppointmentRepoImplementation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Repositories/RepoImplemenation/ProfileSetupImplementation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Repositories/RepoInterfaces/AppointmentInterface.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Repositories/RepoInterfaces/ProfileSetupInterface.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/ViewModels/MainActivityViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/ViewModels/ProfileSetupViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/adapter/AppointmentAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/models/Appointment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/models/AppointmentsModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/models/profile/ProfileSetupBody.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/models/profile/ProfileSetupResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/default_profile_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/error_not_verified.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/gradient_rounded_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_access_time_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_calendar_today_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_email_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_face_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_file_upload_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_home_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_looks_one_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_more_vert_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_person_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_phone_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_refresh_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/info_icon.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/nav_drawer_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/rounded_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/upload_image_placeholder.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_profile_setup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/appointment_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/dropdown_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Activities/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Activities/LoginActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Activities/RegisterActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Activities/RegisterActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Retrofit/ApiServices.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Retrofit/ApiServices.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Retrofit/RemoteDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Retrofit/RemoteDataSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Utils/ValidationError.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/Utils/ValidationError.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/ViewModels/AuthViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/ViewModels/AuthViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/di/RepositoryModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/di/RepositoryModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/models/authentication/RegisterDetails.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/models/authentication/RegisterDetails.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/models/authentication/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/clock_o_mentiadoctor/models/authentication/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\PC\.android\avd\Pixel_4a_API_32.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Clock-O-Mentia Doctor" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Clock-O-Mentia Doctor" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Clock-O-Mentia Doctor" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectId" id="2EmK73VkDweB9UIGV3iRgmYc42c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-1994411179">
+      <recent name="com.example.clock_o_mentiadoctor.Activities" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="Clock-O-Mentia_Doctor" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="Clock-O-Mentia_Doctor" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Clock-O-Mentia_Doctor.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -73,7 +190,23 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="added imports">
+      <created>1662233685809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662233685809</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="faa5bcc6-adcf-4c27-8225-6601e6068829" name="Changes" comment="added imports" />
+      <created>1663195150649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663195150649</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,5 +220,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added imports" />
+    <MESSAGE value="added main activity , profile setup activity" />
+    <option name="LAST_COMMIT_MESSAGE" value="added main activity , profile setup activity" />
   </component>
 </project>

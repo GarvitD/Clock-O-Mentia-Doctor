@@ -31,9 +31,6 @@ class AuthViewModel @Inject constructor(var authRepoInterface: AuthRepoInterface
         if(registerDetails.name.isNullOrEmpty()) {
             return ValidationError.EMPTY_NAME
         }
-        if(registerDetails.age == null || registerDetails.age <= 0) {
-            return ValidationError.INVALID_AGE
-        }
         if(isPasswordInvalid(registerDetails.password)) {
             return ValidationError.INVALID_PASSWORD
         }

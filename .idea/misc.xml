@@ -3,13 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable-v24/ic_baseline_email_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/error_not_verified.xml" value="0.188" />
         <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/google_logo.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/gradient_rounded_bg.xml" value="0.188" />
         <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic__female_doctor.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_face_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_file_upload_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_looks_one_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.211" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.188" />
         <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/ic_male_doctor.xml" value="0.188" />
         <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/line_7.xml" value="0.188" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/drawable/rounded_bg.xml" value="0.188" />
         <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/layout/activity_profile_setup.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/layout/appointment_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/layout/custom_progress_dialog.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/PC/Desktop/Clock-O-Mentia-Doctor/app/src/main/res/layout/dropdown_item.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

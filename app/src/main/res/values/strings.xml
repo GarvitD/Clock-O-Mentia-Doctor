@@ -30,4 +30,8 @@
     <string name="empty_password">Enter Your Password</string>
     <string name="invalid_age">Please Enter a Valid Age</string>
     <string name="invalid_password">Password must have atleast 8 characters including a letter and a number</string>
+    <string name="choose_gender">Choose your gender</string>
+    <string name="choose_profile_picture">Choose a profile picture</string>
+    <string name="empty_address">Address cannot be empty</string>
+    <string name="upload_certificate">Upload your certificate</string>
 </resources>

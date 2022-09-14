@@ -19,7 +19,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object RemoteDataSource{
 
-    private const val BASE_URL="https://clockomentia.herokuapp.com"
+    private const val BASE_URL="https://clock-o-mentia.herokuapp.com"
 
     @Provides
     @Singleton
@@ -31,7 +31,7 @@ object RemoteDataSource{
 
         httpClient.addInterceptor(Interceptor { chain ->
             val builder = chain.request().newBuilder()
-             builder.header("x-mock-match-request-body", "true")
+            //builder.header("x-mock-match-request-body", "true")
             return@Interceptor chain.proceed(builder.build())
         })
 

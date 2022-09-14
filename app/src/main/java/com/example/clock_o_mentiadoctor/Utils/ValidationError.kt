@@ -16,5 +16,9 @@ enum class ValidationError(var code: Int) {
     INVALID_EMAIL(R.string.invalid_email),
     EMPTY_OTP(R.string.empty_otp),
     INVALID_OTP(R.string.invalid_otp),
+    EMPTY_GENDER(R.string.choose_gender),
+    EMPTY_PROFILE_IMAGE(R.string.choose_profile_picture),
+    EMPTY_ADDRESS(R.string.empty_address),
+    EMPTY_CERTIFICATE(R.string.upload_certificate),
     NO_ERROR(R.string.no_error);
 }

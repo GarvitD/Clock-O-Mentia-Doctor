@@ -1,8 +1,10 @@
 package com.example.clock_o_mentiadoctor.Activities
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import com.example.clock_o_mentiadoctor.R
@@ -18,6 +20,7 @@ class LoginActivity : AppCompatActivity() {
 
     private val loginViewModel by viewModels<AuthViewModel>()
     private lateinit var activityLoginBinding : ActivityLoginBinding
+    private val createRegisterActivity = registerForActivityResult(RegisterActivity) {}
     private val progressDialog = ProgressDialogClass(this)
     private val sharedPreferenceManager = SharedPreferenceManager(this)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
         initObservers()
 
         activityLoginBinding.directToRegister.setOnClickListener {
-            startActivity(Intent(this,RegisterActivity::class.java))
+            createRegisterActivity.launch(null)
         }
 
         activityLoginBinding.loginBtn.setOnClickListener {
@@ -85,6 +88,18 @@ class LoginActivity : AppCompatActivity() {
                 NetworkState.ERROR -> handleError()
             }
 
+        }
+    }
+
+    companion object: ActivityResultContract<String?, Boolean>() {
+        override fun createIntent(context: Context, input: String?): Intent {
+            return Intent(context,LoginActivity::class.java).apply {
+
+            }
+        }
+
+        override fun parseResult(resultCode: Int, intent: Intent?): Boolean {
+            return resultCode == RESULT_OK
         }
     }
 }

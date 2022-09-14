@@ -11,4 +11,7 @@
     <color name="dark_green">#263238</color>
     <color name="medium_green_txt">#007C7C</color>
     <color name="error_color">#FF0033</color>
+    <color name="prime">#2daae4</color>
+    <color name="bg_color">#f4f4f4</color>
+    <color name="new_black">#2b2a2a</color>
 </resources>
