@@ -23,7 +23,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:visibility="gone">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageView7"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
@@ -35,7 +35,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.266" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView7"
                 app:layout_constraintVertical_bias="0.213" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView6"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/goToLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -90,10 +90,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:visibility="gone"
+            android:visibility="visible"
             tools:visibility="visible">
 
-            <ImageView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/nav_drawer_open"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -105,7 +105,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.363" />
 
-            <ImageView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/calendar"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -121,7 +121,7 @@
                 android:paddingEnd="5dp"
                 android:paddingBottom="5dp"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -136,7 +136,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.087" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/drName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -179,7 +179,7 @@
                         android:background="@color/prime"
                         android:orientation="vertical">
 
-                        <TextView
+                        <com.google.android.material.textview.MaterialTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
@@ -195,7 +195,7 @@
                             android:layout_marginStart="10dp"
                             android:orientation="horizontal">
 
-                            <ImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="8dp"
@@ -203,7 +203,7 @@
                                 android:layout_marginBottom="8dp"
                                 android:src="@drawable/ic_baseline_access_time_24" />
 
-                            <TextView
+                            <com.google.android.material.textview.MaterialTextView
                                 android:id="@+id/dateTime"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -212,7 +212,7 @@
                                 android:text="DD-MM-YY , HH:MM-HH:MM"
                                 android:textColor="@color/white" />
 
-                            <ImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/refreshBtn"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
@@ -237,7 +237,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <ImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
                                 android:layout_marginStart="20dp"
@@ -245,7 +245,7 @@
                                 android:layout_marginBottom="8dp"
                                 android:src="@drawable/default_profile_img" />
 
-                            <TextView
+                            <com.google.android.material.textview.MaterialTextView
                                 android:id="@+id/name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -257,7 +257,7 @@
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
-                            <ImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/info"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
@@ -310,7 +310,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

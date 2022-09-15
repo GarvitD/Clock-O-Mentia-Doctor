@@ -42,11 +42,11 @@ class ProfileSetupViewModel @Inject constructor(var profileSetupInterface: Profi
         return ValidationError.NO_ERROR
     }
 
-    fun profileSetup(profileSetupBody: ProfileSetupBody){
+    fun profileSetup(accessToken:String,profileSetupBody: ProfileSetupBody){
         viewModelScope.launch {
             profileSetupResponse.postValue(ResponseWrapper.loading())
             try{
-                val response = profileSetupInterface.profileSetup(profileSetupBody)
+                val response = profileSetupInterface.profileSetup(accessToken,profileSetupBody)
                 profileSetupResponse.postValue(ResponseWrapper.success(response))
             }
             catch (e: Exception){

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
@@ -20,6 +21,7 @@ class LoginActivity : AppCompatActivity() {
 
     private val loginViewModel by viewModels<AuthViewModel>()
     private lateinit var activityLoginBinding : ActivityLoginBinding
+    private val createMainActivity = registerForActivityResult(MainActivity) {}
     private val createRegisterActivity = registerForActivityResult(RegisterActivity) {}
     private val progressDialog = ProgressDialogClass(this)
     private val sharedPreferenceManager = SharedPreferenceManager(this)
@@ -60,7 +62,7 @@ class LoginActivity : AppCompatActivity() {
             fun handleSuccess() {
                 progressDialog.dismiss()
 
-                if (response.code == ResponseCode.CODE_201) {
+                if (response.code == ResponseCode.CODE_200) {
 
                     progressDialog.dismiss()
                     response.data?.user?.let {
@@ -71,8 +73,7 @@ class LoginActivity : AppCompatActivity() {
                             saveUserDetails(getString(R.string.auth_token), it)
                         }
                     }
-                    //startActivity(Intent(this@LoginActivity,NearbyDoctorsActivity::class.java))
-                    finish()
+                    createMainActivity.launch(MainActivity.LaunchParams(response.data?.user?.name,false,response.data?.user?.id))
                 }
 
             }

@@ -12,15 +12,11 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.clock_o_mentiadoctor.R
-import com.example.clock_o_mentiadoctor.Utils.HelperClass
-import com.example.clock_o_mentiadoctor.Utils.ProgressDialogClass
-import com.example.clock_o_mentiadoctor.Utils.ResponseCode
-import com.example.clock_o_mentiadoctor.Utils.ValidationError
+import com.example.clock_o_mentiadoctor.Utils.*
 import com.example.clock_o_mentiadoctor.ViewModels.ProfileSetupViewModel
 import com.example.clock_o_mentiadoctor.databinding.ActivityProfileSetupBinding
 import com.example.clock_o_mentiadoctor.models.NetworkState
 import com.example.clock_o_mentiadoctor.models.profile.ProfileSetupBody
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
@@ -39,6 +35,8 @@ class ProfileSetupActivity : AppCompatActivity() {
     private val progressDialog = ProgressDialogClass(this)
     private val genders = arrayOf("Male", "Female", "Others")
     private var clicked = 0
+
+    private val sharedPreferenceManager = SharedPreferenceManager(this)
 
     private var certificates: StorageReference? = null
     private var profileImages: StorageReference? = null
@@ -94,7 +92,7 @@ class ProfileSetupActivity : AppCompatActivity() {
                 progressDialog.dismiss()
 
                 if (response.code == ResponseCode.CODE_201) {
-                    createMainActivity.launch(MainActivity.LaunchParams(response.data?.name,response.data?.isVerified))
+                    createMainActivity.launch(MainActivity.LaunchParams(response.data?.name,response.data?.isVerified,response.data?.id))
                 }
 
             }
@@ -129,7 +127,10 @@ class ProfileSetupActivity : AppCompatActivity() {
             ValidationError.EMPTY_CERTIFICATE -> HelperClass.toast(this,getString(error.code))
 
 
-            else -> profileViewModel.profileSetup(profileSetupDetails)
+            else -> {
+                val token = "Bearer "+sharedPreferenceManager.getUserDetails(getString(R.string.auth_token))
+                token.let { profileViewModel.profileSetup(it,profileSetupDetails) }
+            }
         }
 
     }

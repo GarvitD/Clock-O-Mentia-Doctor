@@ -75,6 +75,10 @@ class RegisterActivity : AppCompatActivity() {
                     val id = response.data?.user?.id
                     sharedPreferenceManager
                         .saveUserDetails(getString(R.string.email_address),activityRegisterBinding.emailAddress.text.toString())
+                    response.data?.tokens?.access?.token?.let {
+                        sharedPreferenceManager.
+                        saveUserDetails(getString(R.string.auth_token), it)
+                    }
                     createProfileSetupActivity.launch(ProfileSetupActivity.LaunchParams( activityRegisterBinding.fullName.text.toString(),activityRegisterBinding.emailAddress.text.toString().trim(),id))
                     finish()
                 }

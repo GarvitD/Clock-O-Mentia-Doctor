@@ -15,6 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
+
 @Module
 @InstallIn(SingletonComponent::class)
 object RemoteDataSource{
@@ -28,6 +29,7 @@ object RemoteDataSource{
             .connectTimeout(2,TimeUnit.MINUTES)
             .readTimeout(2,TimeUnit.MINUTES)
             .writeTimeout(2,TimeUnit.MINUTES)
+
 
         httpClient.addInterceptor(Interceptor { chain ->
             val builder = chain.request().newBuilder()

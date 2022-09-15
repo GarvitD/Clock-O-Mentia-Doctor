@@ -5,5 +5,5 @@ import com.example.clock_o_mentiadoctor.models.profile.ProfileSetupBody
 import com.example.clock_o_mentiadoctor.models.profile.ProfileSetupResponse
 
 interface ProfileSetupInterface {
-    suspend fun profileSetup(profileSetupBody: ProfileSetupBody): ResponseWrapper<ProfileSetupResponse>
+    suspend fun profileSetup(accessToken: String,profileSetupBody: ProfileSetupBody): ResponseWrapper<ProfileSetupResponse>
 }

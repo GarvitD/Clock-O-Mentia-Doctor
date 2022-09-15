@@ -13,5 +13,5 @@ data class Appointment(
     val name: String,
     val patientId: String,
     val reportUrl: String,
-    val status: Int
+    var status: Int
 ): Serializable
