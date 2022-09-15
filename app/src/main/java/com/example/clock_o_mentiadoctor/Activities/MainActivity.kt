@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() , AppointmentAdapter.OnItemClick {
     @Inject lateinit var adapter: AppointmentAdapter
     private val mainActivityViewModel by viewModels<MainActivityViewModel>()
     private val createLoginActivity = registerForActivityResult(LoginActivity) {}
+    private val createViewAppointment = registerForActivityResult(ViewAppointment){}
     private val progressDialog = ProgressDialogClass(this)
     private var appointmentList = ArrayList<Appointment>()
     private val name by lazy { intent.getStringExtra(NAME) }
@@ -63,7 +64,7 @@ class MainActivity : AppCompatActivity() , AppointmentAdapter.OnItemClick {
     }
 
     private fun viewAppointment() {
-
+        createViewAppointment.launch(ViewAppointment.LaunchParams(appointmentList[0]))
     }
 
     private fun updatePending() {
@@ -136,6 +137,6 @@ class MainActivity : AppCompatActivity() , AppointmentAdapter.OnItemClick {
     }
 
     override fun itemClick(appointmentModel: Appointment?) {
-
+        createViewAppointment.launch(ViewAppointment.LaunchParams(appointmentModel))
     }
 }

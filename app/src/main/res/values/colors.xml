@@ -14,4 +14,7 @@
     <color name="prime">#2daae4</color>
     <color name="bg_color">#f4f4f4</color>
     <color name="new_black">#2b2a2a</color>
+    <color name="dark_grey">#9c9c9c</color>
+    <color name="dark_blue">#304ffe</color>
+
 </resources>

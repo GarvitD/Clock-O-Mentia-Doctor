@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.clock_o_mentiadoctor"
@@ -96,7 +96,7 @@ dependencies {
 
     //Jitsi VideoCalling
     implementation ('org.jitsi.react:jitsi-meet-sdk:6.0.0') { transitive = true }
-    implementation 'com.android.support:appcompat-v7:32.0.0'
+    implementation 'com.android.support:appcompat-v7:33.0.0'
 
     //Easy Permission Manager
     implementation 'com.github.DJSeokHo:EasyPermissionManager:1.0.9'

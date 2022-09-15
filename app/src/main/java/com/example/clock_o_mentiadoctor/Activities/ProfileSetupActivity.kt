@@ -44,8 +44,8 @@ class ProfileSetupActivity : AppCompatActivity() {
     private var profileImages: StorageReference? = null
     private var firestoreRef: CollectionReference? = null
     private val GET_IMG_REQID:Int = 16
-    private var certificate_link:String? = null
-    private var profile_link:String? = null
+    private var certificate_link:String? = "test.com"
+    private var profile_link:String? = "test.com"
     private var profileImageUri: Uri? = null
     private var certiImageUri: Uri? = null
     private var latitude:Double = 0.0

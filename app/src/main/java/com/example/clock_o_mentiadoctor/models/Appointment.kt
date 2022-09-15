@@ -1,5 +1,7 @@
 package com.example.clock_o_mentiadoctor.models
 
+import java.io.Serializable
+
 data class Appointment(
     val date: String,
     val detailedInfo: String,
@@ -12,4 +14,4 @@ data class Appointment(
     val patientId: String,
     val reportUrl: String,
     val status: Int
-)
+): Serializable
